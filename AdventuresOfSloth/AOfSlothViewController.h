@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TheSloth.h"
 
 @interface AOfSlothViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+
+-(void)animateSloth:(NSObject*)theSloth;
 
 @end
