@@ -23,6 +23,8 @@
 		37A8F66F19B76B340070996B /* AdventuresOfSlothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8F66E19B76B340070996B /* AdventuresOfSlothTests.m */; };
 		37A8F68319B7D2F50070996B /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37A8F68219B7CE260070996B /* 04B_19__.TTF */; };
 		37A8F68919B7F5E00070996B /* GameBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8F68819B7F5E00070996B /* GameBrain.m */; };
+		37A8F68D19B870C70070996B /* AOfSlothTower.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8F68C19B870C70070996B /* AOfSlothTower.m */; };
+		37A8F68F19B8AAA70070996B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A8F68E19B8AAA70070996B /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		37A8F68219B7CE260070996B /* 04B_19__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = 04B_19__.TTF; path = /Users/heckytorr/Dropbox/04B_19__.TTF; sourceTree = "<absolute>"; };
 		37A8F68719B7F5E00070996B /* GameBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBrain.h; sourceTree = "<group>"; };
 		37A8F68819B7F5E00070996B /* GameBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBrain.m; sourceTree = "<group>"; };
+		37A8F68A19B869A50070996B /* AOfSlothProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOfSlothProtocols.h; sourceTree = "<group>"; };
+		37A8F68B19B870C70070996B /* AOfSlothTower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOfSlothTower.h; sourceTree = "<group>"; };
+		37A8F68C19B870C70070996B /* AOfSlothTower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOfSlothTower.m; sourceTree = "<group>"; };
+		37A8F68E19B8AAA70070996B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A8F68F19B8AAA70070996B /* AudioToolbox.framework in Frameworks */,
 				37A8F64619B76B340070996B /* CoreGraphics.framework in Frameworks */,
 				37A8F64819B76B340070996B /* UIKit.framework in Frameworks */,
 				37A8F64419B76B340070996B /* Foundation.framework in Frameworks */,
@@ -106,6 +113,7 @@
 		37A8F64219B76B340070996B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37A8F68E19B8AAA70070996B /* AudioToolbox.framework */,
 				37A8F64319B76B340070996B /* Foundation.framework */,
 				37A8F64519B76B340070996B /* CoreGraphics.framework */,
 				37A8F64719B76B340070996B /* UIKit.framework */,
@@ -122,8 +130,11 @@
 				37A8F68719B7F5E00070996B /* GameBrain.h */,
 				37A8F68819B7F5E00070996B /* GameBrain.m */,
 				37A8F65519B76B340070996B /* Main.storyboard */,
+				37A8F68B19B870C70070996B /* AOfSlothTower.h */,
+				37A8F68C19B870C70070996B /* AOfSlothTower.m */,
 				37A8F65819B76B340070996B /* AOfSlothViewController.h */,
 				37A8F65919B76B340070996B /* AOfSlothViewController.m */,
+				37A8F68A19B869A50070996B /* AOfSlothProtocols.h */,
 				37A8F68219B7CE260070996B /* 04B_19__.TTF */,
 				37A8F65B19B76B340070996B /* Images.xcassets */,
 				37A8F64A19B76B340070996B /* Supporting Files */,
@@ -263,6 +274,7 @@
 				37A8F65419B76B340070996B /* AOfSlothAppDelegate.m in Sources */,
 				37A8F68919B7F5E00070996B /* GameBrain.m in Sources */,
 				37A8F65019B76B340070996B /* main.m in Sources */,
+				37A8F68D19B870C70070996B /* AOfSlothTower.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +479,7 @@
 				37A8F67419B76B340070996B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37A8F67519B76B340070996B /* Build configuration list for PBXNativeTarget "AdventuresOfSlothTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +488,7 @@
 				37A8F67719B76B340070996B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,6 @@
 //
 
 #import "AOfSlothAppDelegate.h"
-#import "GameBrain.h"
 
 @implementation AOfSlothAppDelegate
 

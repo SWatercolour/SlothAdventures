@@ -10,14 +10,14 @@
 
 @interface GameBrain : NSObject
 
-@property int score,lives,time,highscore;
-
+@property int score,lives,time,highscore,streak,multiplier;
 
 -(void)addScore:(int)amt;
 -(void)readHighScore;
 -(void)setHighScore;
 -(bool)removeLife;
 -(void)incTime;
+-(int)scores;
 
 
 
