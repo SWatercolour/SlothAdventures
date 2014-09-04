@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TheSloth.h"
+#import "GameBrain.h"
 
 @interface AOfSlothViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property GameBrain *game;
 
 -(void)animateSloth:(NSObject*)theSloth;
+-(void)updateScore;
+
 
 @end

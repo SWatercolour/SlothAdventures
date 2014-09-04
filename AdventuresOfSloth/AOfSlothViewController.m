@@ -11,7 +11,6 @@
 @interface AOfSlothViewController ()
 
 
-
 @end
 
 @implementation AOfSlothViewController
@@ -24,6 +23,7 @@
 
 -(void)animateSloth:(NSObject*)theSloth
 {
+    // Animate the sloth. Code copies from web. This will need to get faster as 'time' property of GameBrain goes by.
     
     NSArray *imageNames = @[@"Sloth0000", @"Sloth0001.png", @"Sloth0002.png", @"Sloth0003.png", @"Sloth0004.png",@"Sloth0003.png",@"Sloth0002.png",@"Sloth0001.png"];
     
@@ -50,21 +50,33 @@
 {
     [super viewDidLoad];    [self.backgroundImage setImage:[UIImage imageNamed: @"Mockup.png"]];
     
-	// Do any additional setup after loading the view, typically from a nib.
+	// I'm using this bit to set up everything, including the game brain. Not sure if this is right. GameBrain seems more fundamental than the view controller, so seems more correct to set that up somewhere first.
     
-    // Make a Sloth
-    id theSloth = [[TheSloth alloc] init];
+    // Make a Sloth object.
+    id theSloth = [[NSObject alloc] init];
     
-    //self.scoreLabel.font = [UIFont fontWithName:@"04B_19__.TTF" size:12];
+    // Make a Brain. I don't know how to use this 'game' object later though :( *edit apparently it works with _game. No idea why! But warns that it's unused?
+    GameBrain *game = [[GameBrain alloc] init];
     
+    // Set the font of scoreLabel
     [self.scoreLabel setFont:[UIFont fontWithName:@"04b19" size:65]];
     
     // Animate the sloth
     [self animateSloth:theSloth];
+    
+    [self updateScore];
 
     
     
     
+}
+
+
+//
+-(void)updateScore
+{
+    // Magic _ making a reappearance
+    _scoreLabel.text = [NSString stringWithFormat:@"%d",_game.score];
 }
 
 - (void)didReceiveMemoryWarning

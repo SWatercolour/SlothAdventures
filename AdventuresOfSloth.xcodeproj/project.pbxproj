@@ -21,8 +21,8 @@
 		37A8F66519B76B340070996B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A8F64719B76B340070996B /* UIKit.framework */; };
 		37A8F66D19B76B340070996B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37A8F66B19B76B340070996B /* InfoPlist.strings */; };
 		37A8F66F19B76B340070996B /* AdventuresOfSlothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8F66E19B76B340070996B /* AdventuresOfSlothTests.m */; };
-		37A8F68119B7B7040070996B /* TheSloth.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8F68019B7B7040070996B /* TheSloth.m */; };
 		37A8F68319B7D2F50070996B /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 37A8F68219B7CE260070996B /* 04B_19__.TTF */; };
+		37A8F68919B7F5E00070996B /* GameBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8F68819B7F5E00070996B /* GameBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,9 @@
 		37A8F66A19B76B340070996B /* AdventuresOfSlothTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdventuresOfSlothTests-Info.plist"; sourceTree = "<group>"; };
 		37A8F66C19B76B340070996B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37A8F66E19B76B340070996B /* AdventuresOfSlothTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventuresOfSlothTests.m; sourceTree = "<group>"; };
-		37A8F67F19B7B7040070996B /* TheSloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheSloth.h; sourceTree = "<group>"; };
-		37A8F68019B7B7040070996B /* TheSloth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheSloth.m; sourceTree = "<group>"; };
 		37A8F68219B7CE260070996B /* 04B_19__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = 04B_19__.TTF; path = /Users/heckytorr/Dropbox/04B_19__.TTF; sourceTree = "<absolute>"; };
+		37A8F68719B7F5E00070996B /* GameBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBrain.h; sourceTree = "<group>"; };
+		37A8F68819B7F5E00070996B /* GameBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +119,11 @@
 			children = (
 				37A8F65219B76B340070996B /* AOfSlothAppDelegate.h */,
 				37A8F65319B76B340070996B /* AOfSlothAppDelegate.m */,
+				37A8F68719B7F5E00070996B /* GameBrain.h */,
+				37A8F68819B7F5E00070996B /* GameBrain.m */,
 				37A8F65519B76B340070996B /* Main.storyboard */,
 				37A8F65819B76B340070996B /* AOfSlothViewController.h */,
 				37A8F65919B76B340070996B /* AOfSlothViewController.m */,
-				37A8F67F19B7B7040070996B /* TheSloth.h */,
-				37A8F68019B7B7040070996B /* TheSloth.m */,
 				37A8F68219B7CE260070996B /* 04B_19__.TTF */,
 				37A8F65B19B76B340070996B /* Images.xcassets */,
 				37A8F64A19B76B340070996B /* Supporting Files */,
@@ -259,9 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37A8F68119B7B7040070996B /* TheSloth.m in Sources */,
 				37A8F65A19B76B340070996B /* AOfSlothViewController.m in Sources */,
 				37A8F65419B76B340070996B /* AOfSlothAppDelegate.m in Sources */,
+				37A8F68919B7F5E00070996B /* GameBrain.m in Sources */,
 				37A8F65019B76B340070996B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
